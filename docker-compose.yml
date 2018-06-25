@@ -1,0 +1,9 @@
+ version: '2'
+ services:
+   marioai:
+     container_name: 'marioai'
+     restart: unless-stopped
+     image: marioai:latest
+     command: python /MarioAI/main.py
+     volumes:
+       - ".:/MarioAI/"
