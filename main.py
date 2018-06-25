@@ -295,7 +295,7 @@ def intro_screen():
 
     while not game_start:
         if pygame.display.get_surface() is None:
-            print "Couldn't load display surface"
+            print("Couldn't load display surface")
             return True
         else:
             for event in pygame.event.get():
@@ -363,7 +363,7 @@ def gameplay():
             pass
         while not game_over:
             if pygame.display.get_surface() is None:
-                print "Couldn't load display surface"
+                print("Couldn't load display surface")
                 game_quit = True
                 game_over = True
 
